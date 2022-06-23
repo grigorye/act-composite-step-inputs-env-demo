@@ -1,0 +1,19 @@
+name: 'X'
+description: 'Y'
+
+inputs:
+  v1:
+    description: "."
+    required: true
+  z1:
+    description: "."
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: "YYY"
+      run: |
+        echo "inputs.v1: ${{ inputs.v1 }}"
+        echo "inputs.z1: ${{ inputs.z1 }}"
+      shell: bash
