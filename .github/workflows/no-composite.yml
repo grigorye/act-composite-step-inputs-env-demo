@@ -19,6 +19,9 @@ jobs:
       
       - name: XXX
         shell: bash
+        env:
+          Z2: VALUE2
         run: |
           echo "$V1"
           echo "$Z1"
+          echo "$Z2"

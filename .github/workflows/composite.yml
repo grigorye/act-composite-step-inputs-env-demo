@@ -19,6 +19,9 @@ jobs:
       
       - name: XXX
         uses: ./.github/actions/composite-action
+        env:
+          Z2: VALUE2
         with:
           v1: ${{ env.V1 }}
           z1: ${{ env.Z1 }}
+          z2: ${{ env.Z2 }}

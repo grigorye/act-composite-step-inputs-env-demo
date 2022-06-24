@@ -8,6 +8,9 @@ inputs:
   z1:
     description: "."
     required: true
+  z2:
+    description: "."
+    required: true
 
 runs:
   using: "composite"
@@ -16,4 +19,5 @@ runs:
       run: |
         echo "inputs.v1: ${{ inputs.v1 }}"
         echo "inputs.z1: ${{ inputs.z1 }}"
+        echo "inputs.z2: ${{ inputs.z2 }}"
       shell: bash
